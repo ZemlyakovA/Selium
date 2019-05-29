@@ -28,8 +28,8 @@ namespace SELENIUMitog
         {
             ChromeDriver ChromeDriver = new ChromeDriver();
             ChromeDriver.Navigate().GoToUrl("https://vk.com/feed");
-            Login(ChromeDriver, "email", "79581926046");
-            Login(ChromeDriver, "pass", "Password51ts");
+            Login(ChromeDriver, "email", "");
+            Login(ChromeDriver, "pass", "");
             List<IWebElement> webElements = ChromeDriver.FindElementsById("login_button").ToList();
             foreach (IWebElement item in webElements)
             {
